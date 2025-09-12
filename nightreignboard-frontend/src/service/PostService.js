@@ -7,9 +7,9 @@ class  PostService {
     getPosts() {
         return axios.get(API_URL);
     }
-
+    
     createPost(post) {
-        return axios.post(API_URL, post);
+        return axios.post('http://localhost:9090/api/posts/addPost', post);
     }
 }
 
