@@ -7,6 +7,10 @@ class  PostService {
     getPosts() {
         return axios.get(API_URL);
     }
+
+    createPost(post) {
+        return axios.post(API_URL, post);
+    }
 }
 
 export default new PostService();
