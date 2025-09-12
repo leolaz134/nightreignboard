@@ -31,6 +31,8 @@ public class PostController {
             List<Post> postList = new ArrayList<>();
             postRepo.findAll().forEach(postList::add);
 
+            postList.sort((a,b) -> b.getId().compareTo(a.getId()));
+
             if(postList.isEmpty()){
                 return new ResponseEntity<>(HttpStatus.NO_CONTENT);
             }
