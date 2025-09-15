@@ -31,7 +31,7 @@ It allows users to create and view posts, with new posts automatically displayed
 - Maven
 
 
-Author
+Author:
 Leonardo Lazarevic
 
 Bachelor of Science in Computer Science, Emory University
