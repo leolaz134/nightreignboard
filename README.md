@@ -10,7 +10,6 @@ It allows users to create and view posts, with new posts automatically displayed
 - Posts displayed in reverse chronological order (newest first).
 - RESTful API built with Spring Boot.
 - Persistent storage with PostgreSQL.
-- Configurable through `application.properties`.
 - Frontend powered by React for dynamic user interaction.
 
 ---
@@ -29,7 +28,7 @@ It allows users to create and view posts, with new posts automatically displayed
 
 **Other**
 - REST API Architecture  
-- Gradle/Maven (depending on setup)  
+- Maven
 
 ---
 
