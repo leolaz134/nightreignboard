@@ -2,7 +2,6 @@ import React from 'react';
 import PostService from '../service/PostService';
 import wylderImage from '../ImagesAndIcons/thumbnail-WYLDER.png';
 import revnantImage from '../ImagesAndIcons/revenant-thumbnail.png';
-import { useState } from 'react';
 
 class PostComponent extends React.Component {
     constructor(props) {
