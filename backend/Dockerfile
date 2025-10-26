@@ -7,8 +7,8 @@ WORKDIR /app
 #Copy jar file
 COPY target/nightreignboard-0.0.1-SNAPSHOT.jar app.jar
 
-#Expose port
+#Expose port if the hosted port doesnt work
 EXPOSE 8080
 
-#Run the jar
+#Run the jar and use the port Render gives you
 ENTRYPOINT ["sh", "-c", "java -Dserver.port=$PORT -jar app.jar"]
