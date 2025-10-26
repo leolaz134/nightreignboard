@@ -8,7 +8,7 @@ WORKDIR /app
 COPY target/nightreignboard-0.0.1-SNAPSHOT.jar app.jar
 
 #Expose port
-EXPOSE 9090
+EXPOSE 8080
 
 #Run the jar
-ENTRYPOINT [ "java","-jar", "app.jar" ]
+ENTRYPOINT ["sh", "-c", "java -Dserver.port=$PORT -jar app.jar"]
