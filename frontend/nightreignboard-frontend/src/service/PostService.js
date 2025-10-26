@@ -3,11 +3,11 @@ import axios from 'axios';
 class  PostService {
     // Fetch all users
     getPosts() {
-        return axios.get('http://localhost:9090/posts/getAllPosts');
+        return axios.get('https://nightreignboard.onrender.com/posts/getAllPosts');
     }
     
     createPost(post) {
-        return axios.post('http://localhost:9090/posts/addPost', post);
+        return axios.post('https://nightreignboard.onrender.com/posts/addPost', post);
     }
 }
 
